@@ -36,4 +36,68 @@ body {
     width: 22px;
     margin-right: 10px;
     position: relative;
+    top: 5px;
+}
+
+.app-btn {
+    background: #222B4A;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 8px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    border-radius: 3px;
+}
+
+.app-btn:hover {
+    box-shadow: 0 2px 10px -1px #222B4A;
+    transition: all .3s;
+}
+
+.threeDbox {
+    position: relative;
+    height: 270px;
+    width: 750px;
+    background: url(img/3dbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 100px auto 0;
+}
+
+.threeDbox img {
+    position: absolute;
+    height: auto;
+    width: 531px;
+    left: 109px;
+    top: 38px;
+    transition: all .5s;
+}
+
+.threeDbox:hover img:nth-child(4) {
+    transform: translate(0, -110px);
+    opacity: 1;
+}
+
+.threeDbox:hover img:nth-child(3) {
+    transform: translate(0, -70px);
+    opacity: 0.8;
+}
+
+.threeDbox:hover img:nth-child(2) {
+    transform: translate(0, -30px);
+    opacity: 0.6;
+}
+
+.threeDbox:hover img:nth-child(1) {
+    transform: translate(0, -10px);
+    opacity: 0.4;
+}
+
+.typed {
+    color: rgba(253, 121, 168, 1.0);
 }
